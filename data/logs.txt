@@ -1,0 +1,24 @@
+2024-09-20 00:59:51: START REDDIT-API PROCESSING
+2024-09-20 00:59:51: Step1: Connect to Reddit API. Successfully!
+2024-09-20 00:59:51: Step2: Create posts object for Reddit instance. Successfully!
+2024-09-20 00:59:54: Step3: Extract Data to Pandas DataFrame object. Successfully!
+2024-09-20 00:59:54: Step4: Some basic transformation of data. Successfully!
+2024-09-20 00:59:54: Step5: Save extracted data to CSV file in /data/tmp folder. Successfully!
+2024-09-20 00:59:54: END REDDIT-API PROCESSING
+
+2024-09-20 01:00:00: START S3 BUCKET UPLOADING:
+2024-09-20 01:00:00: Step1: Connect to S3 Instance. Successfully!
+2024-09-20 01:00:00: Step2: Check if Bucket exists and create if not. Successfully!
+2024-09-20 01:00:02: Step3: Unpoad file to S3 bucket.Successfully!
+2024-09-20 01:00:02: END S3 BUCKET UPLOADING.
+
+2024-09-20 01:00:08: START UPLOAD FILE FROM S3 TO REDSHIFT TABLE:
+2024-09-20 01:00:10: Step1: Connect to Redshift instance.Successfully!
+2024-09-20 01:00:12: Step2: Load data from S3 into Redshift.Successfully!
+2024-09-20 01:00:13: END UPLOAD FILE FROM S3 TO REDSHIFT TABLE.
+
+2024-09-20 01:00:17: START DOWNLAOD REDSHIFT TABLE TO CSV FILE:
+2024-09-20 01:00:19: Step1: Connect to Redshift instance.Successfully!
+2024-09-20 01:00:20: Step2: Download data from Redshift table to CSV.Successfully!
+2024-09-20 01:00:20: END DOWNLOAD REDSHIFT TABLE TO CSV FILE.
+
